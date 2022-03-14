@@ -32,18 +32,18 @@ class Dashboard extends Component {
                                 <div className="col-sm-3 p-sm-2">
                                     <div className="card bg-primary text-white shadow-lg">
                                         <div className="card-body">
-                                            <h5 className="card-title">Users</h5>
-                                            <p className="card-text">All users will expand here.</p>
-                                            <Link to="/users" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faUserAlt} /> Go to Users</Link>
+                                            <h5 className="card-title">Numbers</h5>
+                                            <p className="card-text">All number details</p>
+                                            <Link to="/users" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faUserAlt} /> Go to Numbers</Link>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-3 p-sm-2">
                                     <div className="card bg-primary text-white shadow-lg">
                                         <div className="card-body">
-                                            <h5 className="card-title">Numbers</h5>
-                                            <p className="card-text">All number details.</p>
-                                            <Link to="/number" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faListOl} /> Go to Numbers</Link>
+                                            <h5 className="card-title"> Users</h5>
+                                            <p className="card-text">.All users will expand here.</p>
+                                            <Link to="/number" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faListOl} /> Go to Users</Link>
                                         </div>
                                     </div>
                                 </div>

@@ -64,7 +64,7 @@ class UserAddModal extends React.Component {
                     <div className="modal-dialog modal-lg">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h4 className="modal-title">Add User</h4>
+                                <h4 className="modal-title">Add Number</h4>
                                 <button type="button" className="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div className="modal-body">
@@ -149,7 +149,7 @@ class UserAddModal extends React.Component {
                                     form="add-user"
                                     type="submit"
                                     className="btn btn-primary">
-                                    Add User
+                                    Add Number
                                 </button>
                             </div>
                         </div>
