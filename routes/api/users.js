@@ -38,7 +38,7 @@ router.post('/user-add', (req, res) => {
     });
 });
 
-router.post('/user-data', (req, res) => {
+router.get('/user-data', (req, res) => {
     User.find({}).select(['-password']).then(user => {
         if (user) {
             return res.status(200).send(user);

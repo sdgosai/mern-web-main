@@ -129,7 +129,7 @@ class Users extends Component {
 
     getData() {
         axios
-            .post("/api/user-data")
+            .get("/api/user-data")
             .then(res => {
                 this.setState({ records: res.data })
             })
