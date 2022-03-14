@@ -7,9 +7,9 @@ const passport = require('passport');
 const users = require('./routes/api/users');
 const cors = require('cors')
 require('./config/passport')(passport);
-const corsOption = ({
+const corsOption = {
     origin: "http://localhost:3000"
-})
+}
 const app = express();
 
 app.use(function (req, res, next) {
