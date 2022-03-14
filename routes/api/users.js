@@ -41,7 +41,14 @@ router.post('/user-add', (req, res) => {
 router.get('/user-data', (req, res) => {
     User.find({}).select(['-password']).then(user => {
         if (user) {
-            return res.status(200).send(user);
+            var rec = ({
+                status: true,
+                users: {
+                    data: user
+                }
+            })
+            console.log(rec);
+            return res.status(200).send(rec);
         }
     });
 });

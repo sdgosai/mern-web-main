@@ -131,7 +131,7 @@ class Users extends Component {
         axios
             .get("/api/user-data")
             .then(res => {
-                this.setState({ records: res.data })
+                this.setState({ records: res.data.users.data })
             })
             .catch()
     }
