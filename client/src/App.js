@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Dashboard from "./components/pages/Dashboard";
+import NumberList from "./components/pages/number";
 import React, { Component } from 'react';
 import Login from "./components/auth/Login";
 import NotFound from "./components/layout/NotFound";
@@ -33,7 +34,7 @@ if (localStorage.jwtToken) {
 }
 
 class App extends Component {
-    render () {
+    render() {
         return (
             <Provider store={store}>
                 <Router>
@@ -45,6 +46,7 @@ class App extends Component {
                             <Switch>
                                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
                                 <PrivateRoute exact path="/users" component={User} />
+                                <PrivateRoute exact path="/number" component={NumberList} />
                             </Switch>
                             <Route exact path="*" component={NotFound} />
                         </Switch>

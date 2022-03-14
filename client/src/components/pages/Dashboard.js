@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList } from "@fortawesome/free-solid-svg-icons/faList";
 import { Link } from "react-router-dom";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons/faUserAlt";
+import { faListOl } from "@fortawesome/free-solid-svg-icons";
 
 class Dashboard extends Component {
 
@@ -32,23 +33,21 @@ class Dashboard extends Component {
                                     <div className="card bg-primary text-white shadow-lg">
                                         <div className="card-body">
                                             <h5 className="card-title">Users</h5>
-                                            <p className="card-text">With supporting text below as a natural lead-in to
-                                                additional content.</p>
+                                            <p className="card-text">All users will expand here.</p>
                                             <Link to="/users" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faUserAlt} /> Go to Users</Link>
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="col-sm-3 p-sm-2">
-                                    <div className="card bg-secondary text-white shadow-lg">
+                                <div className="col-sm-3 p-sm-2">
+                                    <div className="card bg-primary text-white shadow-lg">
                                         <div className="card-body">
-                                            <h5 className="card-title">Special title treatment</h5>
-                                            <p className="card-text">With supporting text below as a natural lead-in to
-                                                additional content.</p>
-                                            <a href="#" className="btn btn-light">Go somewhere</a>
+                                            <h5 className="card-title">Numbers</h5>
+                                            <p className="card-text">All number details.</p>
+                                            <Link to="/number" className="btn btn-light"><FontAwesomeIcon className="text-primary" icon={faListOl} /> Go to Numbers</Link>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-sm-3 p-sm-2">
+                                {/* <div className="col-sm-3 p-sm-2">
                                     <div className="card bg-info text-white shadow-lg">
                                         <div className="card-body">
                                             <h5 className="card-title">Special title treatment</h5>
